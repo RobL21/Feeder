@@ -1,6 +1,6 @@
 public class Feeder {
 
-    private int currentFood = 200;
+    private int currentFood;
     private int consumedAmount;
     private double rdm = Math.random();
 
