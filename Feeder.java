@@ -23,15 +23,14 @@ public class Feeder {
         } else {
             currentFood = 0;
         }
-
-        System.out.println(currentFood);
+        
         endAmount = currentFood;
     }
 
     public int simulateManyDays(int numBirds, int numDays) {
 
         int days = 0;
-        
+
         if (currentFood == 0) {
             return 0;
         }
@@ -49,6 +48,10 @@ public class Feeder {
         }
         return days;
 
+    }
+
+    public int getEnd() {
+        return endAmount;
     }
 
 }
